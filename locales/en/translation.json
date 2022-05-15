@@ -1,0 +1,27 @@
+{
+  "menu": {
+    "login": "Link starmask",
+    "batch_token": "Batch Op Token",
+    "rpc_ping": "RPC speed",
+    "unit": "Unit Converter",
+    "chain_record": "Chain Record"
+  },
+  "rpc_speed": {
+    "url": "URL",
+    "delay": "Delay",
+    "height": "Block Height",
+    "actions": "Actions",
+    "copy": "copy url",
+    "ms": "ms"
+  },
+  "chain_record": {
+    "query_record": "query record on ",
+    "desc" :"Decentralized, Unchangeable, Permanent record No programming skills required",
+    "content" :"Content",
+    "receive_address" :"Receive Address",
+    "stc_amount" :"Send Number STC",
+    "record_on" :"Record On Chain",
+    "record_tx" :"Record Transaction Hash",
+    "record_time" :"Record Time"
+  }
+}
