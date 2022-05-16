@@ -1,10 +1,18 @@
 {
   "menu": {
     "login": "连接 starmask",
-    "batch_token": "批量操作Token",
+    "batch_token": "批量发送Token",
+    "batch_balance": "批量查询Token",
     "rpc_ping": "RPC 节点测速",
     "unit": "单位转换",
     "chain_record": "链上记录"
+  },
+  "batch_token": {
+      "send":"发送"
+  },
+
+  "batch_balance": {
+      "query": "查询"
   },
   "rpc_speed": {
     "url": "地址",

@@ -1,10 +1,18 @@
 {
   "menu": {
-    "login": "Link starmask",
-    "batch_token": "Batch Op Token",
+    "login": "Connect starmask",
+    "batch_token": "Batch Send Token",
+    "batch_balance": "Batch Query Token",
     "rpc_ping": "RPC speed",
     "unit": "Unit Converter",
     "chain_record": "Chain Record"
+  },
+  "batch_token": {
+    "send":"Send"
+  },
+
+  "batch_balance": {
+    "query": "Query"
   },
   "rpc_speed": {
     "url": "URL",
