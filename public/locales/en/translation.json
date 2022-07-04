@@ -7,6 +7,7 @@
     "unit": "Unit Converter",
     "chain_record": "Chain Record",
     "issue_token": "Issue Token",
+    "burn_token": "Burn Token",
     "games": "Games",
     "showdown": "Showdown",
     "finger_guessing": "FingerGuessing"
@@ -31,6 +32,12 @@
   "batch_token": {
     "send":"Send"
   },
+
+  "burn_token": {
+    "burn":"Burn",
+    "burn_alert":"It's very dangerous. Once destroyed, it can't be recovered"
+  },
+
 
   "batch_balance": {
     "query": "Query"

@@ -1,4 +1,5 @@
 import TokenIcon from '@mui/icons-material/Token';
+import DeleteIcon from '@mui/icons-material/Delete';
 import TransferWithinAStationIcon from '@mui/icons-material/TransferWithinAStation';
 import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 import NetworkPingIcon from '@mui/icons-material/NetworkPing';
@@ -45,6 +46,12 @@ const common_menu = [
         name_i18_key: "menu.chain_record",
         icon: GraphicEqIcon,
         path: "/chain/record"
+    },
+    {
+        name: "6",
+        name_i18_key: "menu.burn_token",
+        icon: DeleteIcon,
+        path: "/stc/burn/token"
     },
 ]
 

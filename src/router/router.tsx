@@ -12,6 +12,7 @@ import ChainRecordInfo from "../pages/Chain/RecordInfo";
 import Balance from "../pages/Stc/Batch/Balance";
 import Transfer from "../pages/Stc/Batch/Transfer";
 import Issue from "../pages/Stc/Issue/index";
+import BurnToken from "../pages/Stc/Burn";
 
 import GameShowdown from "../pages/Game/Showdown";
 import GameShowdownAdmin from "../pages/Game/Showdown/ShowdownAdmin";
@@ -28,6 +29,7 @@ export default function Router() {
         <Route path="/stc/batch/balance" element={<Balance/>}/>
         <Route path="/stc/unit/convert" element={<UnitConverter/>}/>
         <Route path="/stc/issue/token" element={<Issue/>}/>
+        <Route path="/stc/burn/token" element={<BurnToken/>}/>
         <Route path="/node/ping" element={<Ping/>}/>
         <Route path="/node/gas" element={<Gas/>}/>
         <Route path="/chain/record" element={<ChainRecord/>}/>

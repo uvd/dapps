@@ -7,6 +7,8 @@
     "unit": "单位转换",
     "chain_record": "链上记录",
     "issue_token": "发行Token",
+    "burn_token": "销毁Token",
+
     "games": "游戏",
     "showdown": "猜大小",
     "finger_guessing": "剪刀石头布"
@@ -30,6 +32,11 @@
 
   "batch_token": {
       "send":"发送"
+  },
+
+  "burn_token": {
+    "burn":"销毁",
+    "burn_alert":"这非常的危险，一旦选择的销毁，是不能恢复的，请谨慎操作"
   },
 
   "batch_balance": {

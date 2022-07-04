@@ -171,6 +171,36 @@ export async function peerTransfer_with_metadata_v2(account: string, stcAmount: 
 }
 
 
+export async function burnStcToken() {
+    try {
+
+        const functionId = `0x00000000000000000000000000000001::STC:burn`
+        const tyArgs :any= []
+        const args = [{value:10}]
+        const nodeUrl = nodeUrlMap[window.starcoin.networkVersion]
+        const scriptFunction = await utils.tx.encodeScriptFunctionByResolve(functionId, tyArgs, args, nodeUrl)
+        // Multiple BcsSerializers should be used in different closures, otherwise, the latter will be contaminated by the former.
+        const payloadInHex = (function () {
+            const se = new bcs.BcsSerializer()
+            scriptFunction.serialize(se)
+            return hexlify(se.getBytes())
+        })()
+        const txParams = {
+            data: payloadInHex,
+            expiredSecs: 10
+        }
+
+        const starcoinProvider = await getProvder();
+        const transactionHash = await starcoinProvider.getSigner().sendUncheckedTransaction(txParams)
+        return transactionHash
+    } catch (error) {
+
+        throw error
+    }
+
+}
+
+
 function amount(sendAmount: number) {
     if (!(sendAmount > 0)) {
         // eslint-disable-next-line no-alert
